@@ -1,5 +1,5 @@
 <?php
-$con=mysqli_connect("localhost:3325","root","","loginsystem");
+$con=mysqli_connect("localhost:3306","root","","loginsystem");
 if(isset($_POST['login_submit'])){
 	$username=$_POST['username'];
 	$password=$_POST['password'];
