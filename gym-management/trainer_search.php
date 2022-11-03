@@ -9,7 +9,7 @@ include("func.php");
 if(isset($_POST['patient_search_submit']))
 {
     $contact=$_POST['search'];
-     $query="select * from doctorapp where contact='$contact'";
+     $query="select * from member where contact='$contact'";
     $result=mysqli_query($con,$query);
     echo "<div class='container-fluid' style='margin-top:50px;'>
     <div class'card'>
@@ -32,7 +32,7 @@ if(isset($_POST['patient_search_submit']))
     $lname=$row['lname'];
     $email=$row['email'];
     $contact=$row['contact'];
-    $docapp=$row ['docapp'];
+    $docapp=$row ['memberID'];
         echo " <tr>
         <td>$fname</td>
         <td>$lname</td>

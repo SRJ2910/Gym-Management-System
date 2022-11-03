@@ -64,7 +64,7 @@ $result1 = mysqli_query($connect, $query);
             <input type="text" name="lname" class="form-control"><br>
             <label>Email Id</label>
             <input type="text" name="email" class="form-control"><br>
-            <label>Member ID</label>
+            <label>Contact Detail</label>
             <input type="text" name="contact" class="form-control"><br>
             <label>Trainer </label>
             <select class="form-control" name="docapp">
