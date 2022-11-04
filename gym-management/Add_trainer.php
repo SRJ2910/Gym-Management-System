@@ -17,37 +17,47 @@
                     <!-- <div class="col-md-1">
                         <a href="admin-panel.php" class="btn btn-light ">Go Back</a>
                     </div> -->
-                    <div class="col-md-3">
-                        <h3>Members Details</h3>
-                    </div>
+                    <div class="col-md-4"><h3> Register New Trainer</h3></div>
                     <div class="col-md-8">
-                        <form class="form-group" action="trainer_search.php" method="post">
-                            <div class="row">
-                                <div class="col-md-10"><input type="text" name="search" class="form-control" placeholder="Enter contact"></div>
-                                <div class="col-md-2"><input type="submit" name="patient_search_submit" class="btn btn-light" value="Search"> </div>
-                            </div>
-                        </form>
+                        
                     </div>
                 </div>
             </div>
             <div class="card-body" style="background-color:#3498DB;color:#ffffff;">
                 <div class="card-body">
-                    <table class="table table-hover">
+                    <!-- <table class="table table-hover">
                         <thead>
                             <tr>
-                                <th>Member ID</th>
-                                <th>Name</th>
-                                <th>Email</th>
-                                <th>Contact</th>
-                                <th>Trainer</th>
                                 <th>Trainer ID</th>
-                                <!-- <th>Trainer ID</th> -->
+                                <th>Name</th>
+                                <th>Phone</th>
+
                             </tr>
                         </thead>
                         <tbody>
-                            <?php get_member_details(); ?>
+                            <?php get_trainer(); ?>
                         </tbody>
-                    </table>
+                    </table> -->
+                    <!-- <div class="card-body" style="background-color:#3498DB;color:FFFFFF;">
+                        <h3>Register New Trainer</h3>
+                    </div> -->
+                    <div class="card-body"></div>
+                    <form class="form-group" action="func.php" method="post">
+                        <!-- <label>Trainer ID</label>
+                        <input type="text" name="Trainer_id" class="form-control"><br> -->
+                        <label>Name</label>
+                        <input type="text" name="Name" class="form-control" required><br>
+                        <label>Address</label>
+                        <input type="text" name="address" class="form-control" required><br>
+                        <label>Email ID</label>
+                        <input type="text" name="email" class="form-control"><br>
+                        <label>Phone</label>
+                        <input type="text" name="phone" class="form-control" required><br>
+                        <!-- <label>Rating</label>
+                        <input type="text" name="rating" class="form-control"><br> -->
+                        <center>
+                        <input type="submit" class="btn btn-primary" name="tra_submit" value="Register">
+                        </center>
                 </div>
             </div>
         </div>

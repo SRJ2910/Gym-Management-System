@@ -30,40 +30,43 @@
             </div>
             <div class="card-body" style="background-color:#3498DB;color:#ffffff;">
                 <div class="card-body">
-                    <table class="table table-hover">
+                    <!-- <table class="table table-hover">
                         <thead>
                             <tr>
                                 <th>Payment ID </th>
                                 <th>Amount</th>
-                                <th>Mode of Payment</th>
+                                <th>Payment Type</th>
+                                <th>Customer ID</th>
                                 <th>Customer Name</th>
-                                <th>Contact Number</th>
+
                             </tr>
                         </thead>
 
                         <tbody>
                             <?php get_payment(); ?>
                         </tbody>
-                    </table>
+                    </table> -->
                     <!-- <div class="card-body" style="background-color:#3498DB;color:FFFFFF;">
                         <h3>Make new Payment</h3>
                     </div> -->
-                    <!-- <div class="card-body"></div>
+                    <div class="card-body"></div>
                     <form class="form-group" action="func.php" method="post">
-                        <label>Payment ID</label>
-                        <input type="text" name="Payment_id" class="form-control"><br>
+                        <!-- <label>Payment ID</label>
+                        <input type="text" name="Payment_id" class="form-control"><br> -->
 
                         <label>Amount</label>
                         <input type="text" name="Amount" class="form-control"><br>
                         <label>Customer ID</label>
                         <input type="text" name="customer_id" class="form-control"><br>
-                        <label>Customer Name</label>
-                        <input type="text" name="customer_name" class="form-control"><br>
-                        <label>Payment Type</label>
+                        <!-- <label>Customer Name</label>
+                        <input type="text" name="customer_name" class="form-control"><br> -->
+                        <label>Mode of Payment</label>
 
                         <input type="text" name="payment_type" class="form-control"><br>
-                        <input type="submit" class="btn btn-primary" name="pay_submit" value="PAY"> -->
-                </div>
+                        <center>
+                        <input type="submit" class="btn btn-primary" name="pay_submit" value="Submit">
+                        </center>
+                    </div>
             </div>
         </div>
 

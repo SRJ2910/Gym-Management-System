@@ -3,7 +3,7 @@
 <html>
 
 <head>
-    <title>Members details</title>
+    <title>Package</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 </head>
 
@@ -18,37 +18,52 @@
                         <a href="admin-panel.php" class="btn btn-light ">Go Back</a>
                     </div> -->
                     <div class="col-md-3">
-                        <h3>Members Details</h3>
+                        <h3>Package</h3>
                     </div>
                     <div class="col-md-8">
-                        <form class="form-group" action="trainer_search.php" method="post">
+                        <!-- <form class="form-group" action="patient_search.php" method="post">
                             <div class="row">
-                                <div class="col-md-10"><input type="text" name="search" class="form-control" placeholder="Enter contact"></div>
-                                <div class="col-md-2"><input type="submit" name="patient_search_submit" class="btn btn-light" value="Search"> </div>
-                            </div>
-                        </form>
+
+                        </form> -->
                     </div>
                 </div>
             </div>
             <div class="card-body" style="background-color:#3498DB;color:#ffffff;">
                 <div class="card-body">
-                    <table class="table table-hover">
+                    <!-- <table class="table table-hover">
                         <thead>
                             <tr>
-                                <th>Member ID</th>
-                                <th>Name</th>
-                                <th>Email</th>
-                                <th>Contact</th>
-                                <th>Trainer</th>
-                                <th>Trainer ID</th>
-                                <!-- <th>Trainer ID</th> -->
+                                <th>Payment ID </th>
+                                <th>Amount</th>
+                                <th>Payment Type</th>
+                                <th>Customer ID</th>
+                                <th>Customer Name</th>
+
                             </tr>
                         </thead>
+
                         <tbody>
-                            <?php get_member_details(); ?>
+                            <?php get_payment(); ?>
                         </tbody>
-                    </table>
-                </div>
+                    </table> -->
+                    <!-- <div class="card-body" style="background-color:#3498DB;color:FFFFFF;">
+                        <h3>Make new Payment</h3>
+                    </div> -->
+                    <div class="card-body"></div>
+                    <form class="form-group" action="func.php" method="post">
+                        <!-- <label>Payment ID</label>
+                        <input type="text" name="Payment_id" class="form-control"><br> -->
+
+                        <label>Package Name</label>
+                        <input type="text" name="name" class="form-control"><br>
+                        <label>Amount</label>
+                        <input type="text" name="amount" class="form-control"><br>
+                        <label>Duration</label>
+                        <input type="text" name="duration" class="form-control"><br>
+                        <center>
+                        <input type="submit" class="btn btn-primary" name="package_submit" value="Submit">
+                        </center>
+                    </div>
             </div>
         </div>
 
