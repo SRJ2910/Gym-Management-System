@@ -3,7 +3,7 @@
 
 // php select option value from database
 
-$hostname = "localhost:3306";
+$hostname = "localhost:3325";
 $username = "root";
 $password = "";
 $databaseName = "loginsystem";
@@ -71,35 +71,43 @@ $result1 = mysqli_query($connect, $query);
           <a href="" class="list-group-item active">Members</a>
           <a href="" class="list-group-item">Add New Member</a>
           <a href="trainer_details.php" class="list-group-item">Member details</a>
-          <a href="package.php" class="list-group-item">Package details</a>
-          <a href="payment.php" class="list-group-item">Payments</a>
+          <!-- <a href="package.php" class="list-group-item">Package details</a> -->
+          <!-- <a href="payment.php" class="list-group-item">Payments</a> -->
         </div>
         <hr>
         <div class="list-group">
-          <a href="" class="list-group-item active">Trainer</a>
-          <a href="" class="list-group-item">Add New Trainer</a>
-          <a href="trainer_details.php" class="list-group-item">Trainer details</a>
+          <a href="payment.php" class="list-group-item active">Payment</a>
+          <a href="Add_payment.php" class="list-group-item">Add New Payment</a>
+          <a href="payment.php" class="list-group-item">Payment detail</a>
+        </div>
+        <hr>
+        <hr>
+        <div class="list-group">
+          <a href="trainer.php" class="list-group-item active">Trainer</a>
+          <a href="Add_trainer.php" class="list-group-item">Add New Trainer</a>
+          <a href="trainer.php" class="list-group-item">Trainer details</a>
         </div>
         <hr>
         <div class="list-group">
           <a href="" class="list-group-item active">Packages</a>
-          <a href="" class="list-group-item">View Package</a>
+          <a href="Add_package.php" class="list-group-item">Add New Package</a>
+          <a href="package.php" class="list-group-item">View Package</a>
           <!-- <a href="trainer_details.php" class="list-group-item">Member details</a>
           <a href="package.php" class="list-group-item">Package details</a>
           <a href="payment.php" class="list-group-item">Payments</a> -->
         </div>
         <hr>
-        <div class="list-group">
+        <!-- <div class="list-group">
           <a href="trainer.php" class="list-group-item active">Trainer</a>
           <a href="trainer.php" class="list-group-item active">Trainer details</a>
           <a href="trainer.php" class="list-group-item active">Add new Trainer</a>
-        </div>
+        </div> -->
 
       </div>
       <div class="col-md-9">
         <div class="card">
 
-          <div class="card-body" style="background-color:#3498DB;color:FFFFFF;">
+          <div class="card-body" style="background-color:#007BFF;color:#ffffff;">
             <h3>Add New Member</h3>
           </div>
           <div class="card-body"></div>
@@ -110,10 +118,10 @@ $result1 = mysqli_query($connect, $query);
             <input type="text" name="lname" class="form-control"><br>
             <label>Email Id:</label>
             <input type="text" name="email" class="form-control"><br>
-            <label>Contact Detail</label>
+            <label>Contact Detail:</label>
             <input type="text" name="contact" class="form-control"><br>
             <label>Trainer: </label>
-            <select class="form-control" name="docapp">
+            <select class="form-control" name="trainer">
 
               <?php while ($row1 = mysqli_fetch_array($result1)) :; ?>
 
@@ -123,9 +131,9 @@ $result1 = mysqli_query($connect, $query);
 
             </select>
             <br>
-
-            <input type="submit" class="btn btn-primary" name="addMember_submit" value="Register"> <a href="func.php" class="btn btn-light"></a>
-
+            <center>
+              <input type="submit" class="btn btn-primary" name="addMember_submit" value="Register"> <a href="func.php" class="btn btn-light"></a>
+            </center>
 
           </form>
         </div>
